@@ -1,0 +1,114 @@
+REGISTRO DE PROMPTS Y PARÁMETROS — Proyecto Integrador Módulo XII
+Alumno: Genaro Isidro Alamillo Montes
+(Regla 3 del proyecto: se deben guardar TODOS los prompts utilizados.)
+Ve pegando aquí cada intento, con fecha y hora.
+
+================================================================
+FASE 1 — TEXTO -> IMAGEN
+Herramienta: Google Gemini
+================================================================
+
+[Intento 1]
+Prompt:
+Crea una imagen horizontal de alta calidad (16:9) que represente un centro de
+operaciones del ciberespacio del futuro monitoreado por inteligencia artificial.
+La escena debe mostrar:
+- Elemento principal: una amplia sala de operaciones donde analistas trabajan junto
+  a asistentes de IA holográficos que resaltan amenazas sobre un mapa de red gigante.
+- Elemento secundario: una pared curva de pantallas con visualizaciones de tráfico de
+  red, grafos de nodos interconectados, líneas de tiempo de alertas y un globo
+  terráqueo con rutas de ataque animadas en rojo y ámbar.
+- Ambiente / escenario: interior amplio de techos altos, arquitectura limpia tipo
+  búnker tecnológico, pasillos con racks de servidores iluminados al fondo, piso
+  reflejante.
+- Acción principal: un analista de pie señala un nodo comprometido en una mesa
+  interactiva mientras un agente de IA proyecta sobre la mesa una recomendación de
+  contención en forma de diagrama luminoso.
+- Detalles visuales importantes: partículas de datos flotando en el aire, cableado de
+  fibra óptica luminoso, íconos estilizados de escudo y candado (no marcas reales),
+  pequeños drones de inspección suspendidos, reflejos en superficies de vidrio.
+Estilo visual: digital art futurista y cinematográfico, realista pero estilizado,
+aspecto de portada editorial de tecnología.
+Composición: horizontal, plano general amplio, perspectiva de tres cuartos, punto de
+fuga central, con espacio negativo libre en el tercio superior izquierdo para colocar
+un título.
+Iluminación: cinematográfica y tenue, con acentos de neón y alto contraste entre
+sombras frías y el brillo de las pantallas.
+Paleta de color: azul profundo, cian y morado, con toques de ámbar sólo en las alertas.
+Restricciones: no incluir texto legible, logotipos, marcas reales, banderas, rostros
+reconocibles de personas reales ni personajes protegidos por derechos de autor.
+
+Resultado: Casi aceptable
+Ajuste para el siguiente intento: Coloca en la imagen, almeno un androide, simulando que es quien dirige todo el centro
+Archivo guardado: fase1_original.png
+
+[Intento 2]
+Cambios respecto al intento 1: Se agrego el androide
+Resultado: El tamaño del androide se ve desproporcional a los humanos
+Archivo guardado: fase1_original2.png
+
+[Intento 3*
+Cambios: Has que el tamaño del androide sea proporcional al de los humanos
+Archivo guardado: fase1_original3.png
+
+================================================================
+FASE 2 — IMAGEN -> IMAGEN (DIFUSIÓN / image-to-image)
+Herramienta: ____________________  (distinta a la Fase 1; ej. Leonardo AI)
+Imagen de entrada: fase1_original.png
+================================================================
+
+Prompt de transformación:
+Reinterpreta esta sala de operaciones del ciberespacio como si un modelo de difusión
+la estuviera reconstruyendo desde ruido latente: agrega grano digital controlado,
+micro-glitches, franjas de scanline muy suaves, partículas de datos dispersas y una
+atmósfera más experimental y onírica. Conserva la composición general, la disposición
+de la pared de pantallas y la silueta de los analistas. Refuerza los reflejos y los
+detalles tecnológicos. Estilo futurista cinematográfico; paleta azul, cian y morado
+con acentos ámbar.
+
+Negative prompt:
+rostros deformes, manos deformes, dedos de más, miembros extra, anatomía incorrecta,
+texto ilegible, letras, marca de agua, logotipo, firma, sobreexposición, colores
+quemados, composición desordenada, baja resolución, artefactos de compresión, imagen
+sucia
+
+Parámetros:
+- Modo: image-to-image
+- Denoising / Image strength: ______ (sugerido 0.35 - 0.65)
+- Steps: ______ (sugerido 25 - 40)
+- CFG Scale / Guidance: ______ (sugerido 6 - 9)
+- Sampler: ______ (Euler / DPM++ 2M / DDIM)
+- Resolución: ______
+- Seed: ______  <-- ANOTAR SIEMPRE
+- Modelo base: ______
+
+Variantes generadas: ____   Variante elegida: ____
+Archivo guardado: fase2_transformada.png
+Fecha/hora: __________
+
+================================================================
+FASE 3 — IMAGEN -> TEXTO (IMAGE CAPTIONING)
+Herramienta(s): BLIP vía Space "hysts/image-captioning-with-blip" (Hugging Face) + ____________________ (LLM multimodal para salida estructurada, distinto a Fases 1 y 2)
+Imagen analizada: fase2_transformada2.png
+================================================================
+
+Prompt de captioning estructurado:
+Analiza la imagen que te comparto y entrega un image captioning completo con esta
+estructura exacta:
+1. Descripción breve (máx. 25 palabras).
+2. Descripción detallada (80 a 120 palabras).
+3. Objetos principales.
+4. Contexto probable.
+5. Estilo visual.
+6. Elementos afectados por ruido o distorsión.
+7. Nivel de confianza (alto / medio / bajo) con justificación.
+8. Posibles interpretaciones alternativas.
+Separa hechos visibles de inferencias. No inventes texto, marcas ni identidades.
+
+Salida recibida (pegar completa):
+____________________________________________________
+____________________________________________________
+____________________________________________________
+
+Captura de evidencia guardada: fase3_captioning.png
+Fecha/hora: __________
