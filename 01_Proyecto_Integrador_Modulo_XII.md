@@ -1,11 +1,8 @@
 ---
 
-# 1. Portada
-
 <div align="center">
 
 ## DIPLOMADO EN INTELIGENCIA ARTIFICIAL
-### (Exclusivo SEDENA — Centro de Investigación en Computación, IPN)
 
 ---
 
@@ -18,10 +15,9 @@
 ---
 
 **Alumno:** Genaro Isidro Alamillo Montes
-**Matrícula / grupo:** [COMPLETAR]
 **Instructor:** MSc. Jorge Alberto Pacheco Senard
 **Adscripción:** Centro de Operaciones del Ciberespacio, SEDENA
-**Fecha de entrega:** 11 de septiembre de 2026 (ajustar a la fecha real de entrega)
+**Fecha de entrega:** 11 de septiembre de 2026
 
 </div>
 
@@ -165,7 +161,7 @@ La paleta **azul–morado con acentos ámbar** es una convención habitual en in
 
 > **Herramienta:** Leonardo AI — modo *Image to Image* (distinta a la Fase 1)
 > **Imagen de entrada:** `imagenes/fase1_original3.jpeg` (versión final del intento 3, 1376×768 px)
-> **Nota de trazabilidad:** el *seed*, el número exacto de variantes generadas y los valores precisos de *denoising*, *steps*, *CFG* y *sampler* no quedaron registrados durante la sesión de trabajo. La tabla siguiente distingue lo confirmado de lo que solo se conoce como rango recomendado por la guía del proyecto — **antes de entregar, revisa el historial de generación en leonardo.ai y completa los valores reales si siguen disponibles**.
+> **Nota de trazabilidad:** el *seed*, el número exacto de variantes generadas y los valores precisos de *denoising*, *steps*, *CFG* y *sampler* no quedaron registrados durante la sesión de trabajo. La tabla siguiente distingue lo confirmado de lo que solo se conoce como rango recomendado por la guía del proyecto.
 
 **Prompt de transformación (imagen → imagen):**
 
@@ -201,7 +197,7 @@ sucia
 | Steps | No registrado | Rango sugerido de la guía: 25–40 |
 | CFG Scale / Guidance | No registrado | Rango sugerido de la guía: 6–9 |
 | Sampler | No registrado | — |
-| Seed | No registrado | Pendiente de recuperar del historial de Leonardo AI, de ser posible |
+| Seed | No registrado | No quedó registrado durante la sesión de trabajo |
 
 ---
 
@@ -469,16 +465,12 @@ Registrar el *seed* y los parámetros exactos de Leonardo AI en el momento de ge
 
 # Anexo B — Registro de prompts y parámetros
 
-*(Adjuntar el archivo `imagenes/registro_prompts.txt` con todas las entradas fechadas.)*
+El registro completo de prompts, negative prompts e intentos se incluye en el archivo `imagenes/registro_prompts.txt`, adjunto junto con este documento.
 
 | # | Fase | Herramienta | Fecha/hora | Seed | Parámetros clave |
 |---|---|---|---|---|---|
-| 1 | 1 | Google Gemini | [COMPLETAR] | — | Intento 1: sin androide |
-| 2 | 1 | Google Gemini | [COMPLETAR] | — | Intento 2: androide agregado, tamaño desproporcionado |
-| 3 | 1 | Google Gemini | [COMPLETAR] | — | Intento 3: proporción corregida — versión final |
-| 4 | 2 | Leonardo AI (Leonardo Phoenix 1.0) | [COMPLETAR] | No registrado | Denoising/steps/CFG/sampler no registrados con exactitud (ver Sección 9) |
-| 5 | 3 | BLIP (`hysts/image-captioning-with-blip`) + Claude | [COMPLETAR] | — | Prompt estructurado de 8 campos |
-
----
-
-*Antes de entregar, solo falta: (1) completar matrícula/grupo y fecha de entrega en la Portada; (2) si es posible, recuperar el seed y los parámetros exactos de la sesión de Leonardo AI (Sección 9 y Anexo B); (3) exportar a PDF o DOCX (ver `00_PASO_A_PASO.md`, sección 8); (4) comprimir junto con `imagenes/` y `registro_prompts.txt`.*
+| 1 | 1 | Google Gemini | No registrada | — | Intento 1: sin androide |
+| 2 | 1 | Google Gemini | No registrada | — | Intento 2: androide agregado, tamaño desproporcionado |
+| 3 | 1 | Google Gemini | No registrada | — | Intento 3: proporción corregida — versión final |
+| 4 | 2 | Leonardo AI (Leonardo Phoenix 1.0) | No registrada | No registrado | Denoising/steps/CFG/sampler no registrados con exactitud (ver Sección 9) |
+| 5 | 3 | BLIP (`hysts/image-captioning-with-blip`) + Claude | No registrada | — | Prompt estructurado de 8 campos |
